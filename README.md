@@ -27,24 +27,62 @@ This applied data science project analyzes customer acquisition and marketing pe
 7. Hypothesis testing
 8. Business-focused marketing visualizations
 
-## Selected Findings
+## Key Findings
 
 - **Wine is the highest-revenue product category**, followed by meat products.
-- Fruit and sweet products are among the lowest-revenue categories.
-- Store purchases show a strong relationship with total purchases.
-- Total children is negatively associated with total purchases and customer spending.
-- Spain shows the highest number of last-campaign acceptances in the analysis.
-- Age distributions for customers who accepted and did not accept the last campaign appear broadly similar.
+- Customers with **no children at home** had the highest average total spending.
+- Store purchases remain strongly related to total purchase volume.
+- Catalog and web purchases also show meaningful positive relationships with total spending.
+- Spain had the highest number of customers accepting the last campaign in this dataset.
+- Age alone does not clearly separate customers who accepted the last campaign from those who did not.
 
-## Revenue by Product Category
+## Insight Dashboard
+
+### Revenue by Product Category
 
 ![Total Revenue by Product Category](figures/product_revenue.png)
+
+**Interpretation:** Wine and meat products are the strongest revenue categories, making them priority candidates for targeted promotions and retention campaigns.
+
+### Purchase Channel Correlation
+
+![Purchase Channel Correlation](figures/purchase_channel_correlation.svg)
+
+**Interpretation:** Store, catalog, and web purchasing behavior all move with total purchases, supporting an omnichannel strategy rather than a single-channel approach.
+
+### Campaign Acceptance by Country
+
+![Campaign Acceptance by Country](figures/campaign_acceptance_by_country.svg)
+
+**Interpretation:** Spain produced the highest number of last-campaign acceptances, making it a useful benchmark market for campaign analysis.
+
+### Children at Home vs. Total Spending
+
+![Children vs Total Spending](figures/children_vs_total_spending.svg)
+
+**Interpretation:** Average spending is highest among customers without children at home, suggesting household composition is an important segmentation variable.
+
+### Campaign Acceptance by Age Group
+
+![Campaign Acceptance by Age](figures/campaign_acceptance_by_age.svg)
+
+**Interpretation:** Campaign acceptance does not appear to be driven by age alone, so age should be combined with purchase behavior, household composition, and product affinity.
+
+## Executive Recommendations
+
+1. **Prioritize high-revenue product categories.** Use wine and meat product affinity to drive targeted offers.
+2. **Segment customers by household composition.** Customers with children and customers without children show different spending behavior.
+3. **Preserve an omnichannel strategy.** Store, web, and catalog channels all contribute to customer acquisition and purchase activity.
+4. **Use Spain as a campaign-response benchmark.** Compare messaging, offers, and customer mix in Spain against lower-response countries.
+5. **Build a high-value customer segment.** Combine spending, channel use, product preference, and campaign-response history for future targeting.
 
 ## Repository Structure
 
 ```text
 marketing-campaign-customer-acquisition-analysis/
 ├── README.md
+├── PROJECT_REPORT.md
+├── PROBLEM_STATEMENT.md
 ├── LICENSE
 ├── requirements.txt
 ├── .gitignore
@@ -56,7 +94,11 @@ marketing-campaign-customer-acquisition-analysis/
 │   ├── marketing_campaign_customer_acquisition_analysis.ipynb
 │   └── README.md
 ├── figures/
-│   └── product_revenue.png
+│   ├── product_revenue.png
+│   ├── purchase_channel_correlation.svg
+│   ├── campaign_acceptance_by_country.svg
+│   ├── children_vs_total_spending.svg
+│   └── campaign_acceptance_by_age.svg
 └── docs/
     ├── analysis_screenshots.docx
     ├── problem_statement.docx
@@ -79,9 +121,14 @@ jupyter notebook
 
 Open `notebooks/marketing_campaign_customer_acquisition_analysis.ipynb` and run the notebook cells in order.
 
+## Supporting Documentation
+
+- [Project Report](PROJECT_REPORT.md)
+- [Problem Statement](PROBLEM_STATEMENT.md)
+
 ## Portfolio Relevance
 
-This project demonstrates exploratory data analysis, data wrangling, feature engineering, missing-data imputation, statistical hypothesis testing, customer behavior analytics, marketing campaign analysis, business intelligence, and data visualization.
+This project demonstrates exploratory data analysis, data wrangling, feature engineering, missing-data imputation, statistical hypothesis testing, customer behavior analytics, marketing campaign analysis, business intelligence, data visualization, and executive-level recommendation development.
 
 ## Author
 
