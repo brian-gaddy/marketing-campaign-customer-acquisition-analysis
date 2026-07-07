@@ -36,6 +36,10 @@ This applied data science project analyzes customer acquisition and marketing pe
 - Spain shows the highest number of last-campaign acceptances in the analysis.
 - Age distributions for customers who accepted and did not accept the last campaign appear broadly similar.
 
+## Revenue by Product Category
+
+![Total Revenue by Product Category](figures/product_revenue.png)
+
 ## Repository Structure
 
 ```text
@@ -45,9 +49,18 @@ marketing-campaign-customer-acquisition-analysis/
 ├── requirements.txt
 ├── .gitignore
 ├── data/
+│   ├── marketing_data.csv
+│   ├── data_dictionary.xlsx
+│   └── README.md
 ├── notebooks/
+│   ├── marketing_campaign_customer_acquisition_analysis.ipynb
+│   └── README.md
 ├── figures/
+│   └── product_revenue.png
 └── docs/
+    ├── analysis_screenshots.docx
+    ├── problem_statement.docx
+    └── project_write_up.docx
 ```
 
 ## Technologies
@@ -63,6 +76,8 @@ python -m venv .venv
 pip install -r requirements.txt
 jupyter notebook
 ```
+
+Open `notebooks/marketing_campaign_customer_acquisition_analysis.ipynb` and run the notebook cells in order.
 
 ## Portfolio Relevance
 
